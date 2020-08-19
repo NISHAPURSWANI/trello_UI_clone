@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- head -->
+    <header class="head">
+    
+        <div class="menu">
+        <button class="mybtn"><i class="fa fa-th" style="font-size:24px; color:white;"></i></button>
+        <button class="mybtn"><i class="fas fa-home" style="font-size:24px;color:white; "></i></button>
+        <button class="mybtn"><i class="fa fa-clipboard" style="font-size:24px; color:white;" ></i>Boards</button>
+        <input type="text" class="mybtn" >
+         <button class="mybtn"><i class="fa fa-search" style="font-size:24px;color:white;""> </i></button>
+       
+    
+        </div>
+    
+        <div class="title">
+    
+        <h1>Trello <i class="fab fa-trello"></i></h1>
+    
+        </div>
+      <div class="menu">
+        <button class="mybtn"><i class="fa fa-plus" style="font-size:24px; color:white;"></i></button> <button class="mybtn"><i class="fa fa-info-circle" style="font-size:24px; color:white;"></i></button> <button class="mybtn"><i class="fa fa-bell" style="font-size:24px;color:white;"></i></button> <button  class="circular"></button>
+    
+        
+     
+      </div>
+    
+        
+    </header>
+    <!-- End of head -->
+    
+    
+    <!-- Board  -->
+    <section class="between">
+    
+        <div class="between1">
+    
+            <button class="btitle btn">
+                <h2>Frontend Training</h2>
+            </button>
+        
+        <button class="mybtn"><i class="far fa-star" style="font-size:18px;color:orange "></i> </button> &nbsp |Personal &nbsp | <button class="mybtn"><i class="fa fa-lock" style="font-size:18px; color:white;"></i> Private </button> &nbsp |
+    
+       <i class='fas fa-circle' style='font-size:24px'></i><i class='fas fa-circle' style='font-size:24px'></i><i class='fas fa-circle' style='font-size:24px'></i><i class='fas fa-circle' style='font-size:24px'></i> 
+       
+    &nbsp
+        <button class="mybtn">Invite</button>
+    
+            
+            <!--<button class="personal-btn btn">Personal</button>
+    
+            <button class="private-btn btn">Private</button>-->
+    
+        </div>
+    
+      <div class="menu-btn"> 
+    <button class="mybtn" ><i class="fas fa-concierge-bell	
+    " style="font-size:18px;color:white; "></i>Butler</button>
+        <button class="mybtn"><i class="fas fa-ellipsis-h menu-btn-icon"style="font-size:18px;color:white; "></i>Show Menu</button>
+      </div>
+    </section>
+    <!-- End of board -->
+    
+</head>
+<style>
+:root {
+    font-size: 10px;
+}/*header*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+}
+
+:focus {
+    outline-color: #fa0;
+}
+
+/* head */
+
+.head {
+    flex-basis: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.8rem;
+}
+
+.head .btn {
+    background: none;
+
+    border-radius: 0.3rem;
+}
+
+.head .btn:hover {
+    background-color: #3385b5;
+}
+
+.menu {
+    display: flex;
+    flex-shrink: 0;
+    background: none;
+
+}
+.circular{
+  
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+   
+}
+.mybtn{
+  color:white;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.title {
+    flex: 1;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    
+    text-align: center;
+    
+}
+
+.title:hover {
+    color: black;
+}
+
+/* Board */
+
+.between {
+    flex-basis: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+    padding: 0 1rem;
+    color: #f6f6f6;
+}
+
+.between1 {
+    display: flex;
+}
+
+.between1 .btn {
+    margin-right: 1rem;
+}
+
+.between1 .btn:last-of-type {
+    margin-right: 0;
+}
+
+.between .btn {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 0.6rem;
+    border-radius: 0.3rem;
+    height: 3rem;
+}
+
+.between .btn:hover {
+    background-color: #006aa8;
+}
+
+
+
+
+/*****/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+  background: url("https://i.imgur.com/7AqxKzf.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto";
+}
+.main::-webkit-scrollbar {
+    height: 2.4rem;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #66a3c7;
+    border: 0.8rem solid #0079bf;
+    border-top-width: 0;
+}
+
+.main {
+    display: flex;
+
+    align-items: start;
+    padding: 0 0.8rem 0.8rem;
+    overflow-x: auto;
+    height: calc(100vh - 8.6rem);
+}
+
+
+.list {
+    flex: 0 0 25rem;
+    display: flex;
+    background-color: #ebecf0;
+    flex-direction: column;
+    max-height: calc(100vh - 11.8rem);
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+}
+
+.list:last-of-type {
+    margin-right: 0;
+}
+
+.list-title {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #172b4d;
+    padding: 1rem;
+  
+}
+
+.listlist {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 0 0.6rem 0.5rem;
+    overflow-y: auto;
+}
+
+.listlist::-webkit-scrollbar {
+    width: 1.6rem;
+}
+
+.listlist::-webkit-scrollbar-thumb {
+    background-color: #c4c9cc;
+    border-right: 0.6rem solid #e2e4e6;
+}
+
+.listlist li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #fff;
+    padding: 0.65rem 0.6rem;
+    color: #4d4d4d;
+    border-bottom: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.listlist li:last-of-type {
+    margin-bottom: 0;
+}
+
+.listlist li:hover {
+    background-color: ;
+}
+
+.addcard {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #838c91;
+    text-align: center;
+}
+
+.addcard:hover {
+    background-color: #cdd2d4;
+    color: #4d4d4d;
+    text-decoration: underline;
+}
+.addlist {
+    flex: 0 0 15rem;
+    font-size: 1rem;
+    font-weight: 700;
+   /* background-color: red;*/
+    color: Black;
+    border-radius: 0.3rem;
+    text-align: left;
+}
+
+.addlist:hover {
+    background-color: #005485;
+}
+.addcard::before,
+ {
+    content: '+';
+}
+
+
+.addcard::after,
+.addlist::after {
+    content: '...';
+}
+.list-title::end{
+  content:'...';
+  
+}
+
+
+
+
+
+
+
+
+</style>
+<body>
+   
+    <section class="main">
+
+        <div class="list">
+    
+            <h3 class="list-title">Tasks to Do </h3>
+    
+            <ul class="listlist">
+                <li>Complete mock-up for client website <br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+          
+                <li>Email mock-up to client for feedback<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Update personal website header background image<br> <i class="fas fa-paperclip"></i> &nbsp 1  </li>
+                <li>Update personal website heading fonts<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>Add google map to personal website<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Begin draft of CSS Grid article<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Read new CSS-Tricks articles<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Read new Smashing Magazine articles<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Read other bookmarked articles<br> <i class="fas fa-paperclip"> &nbsp 2</i></li>
+                <li>Look through portfolios to gather inspiration<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Create something cool for CodePen<br> <i class="fas fa-paperclip"> &nbsp 2 </i></li>
+                <li>Post latest CodePen work on Twitter<br> <i class="fas fa-paperclip"> &nbsp 1  </i></li>
+                <li>Listen to new Syntax.fm episode<br> <i class="fas fa-paperclip"></i> &nbsp 1  </li>
+                <li>Listen to new CodePen Radio episode<br> <i class="fas fa-paperclip"></i> &nbsp 1  </li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Completed Tasks</h3>
+    
+            <ul class="listlist">
+                <li>Clear email inbox<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>Finalise requirements for client web design<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>Begin work on mock-up for client website<br> <i class="fas fa-paperclip"> &nbsp &nbsp 1 </i></li>
+           <br>
+           <br>
+           <br>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Topics/Concepts to Revise</h3>
+    
+            <ul class="listlist">
+                <li>HTML Elements<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>HTML Form Validation<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>HTML Structured Data<br> <i class="fas fa-paperclip">&nbsp 2</i></li>
+                <li>Advanced CSS Selectors<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>CSS Transforms<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>CSS Animations<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>CSS Flexbox<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>CSS Grid<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>CSS Methodologies (BEM, SMACSS etc.)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>SASS/SCSS<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Layout Fallbacks<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Responsive Design<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Design Patterns<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript Fundamentals<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript OOP<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript DOM Manipulation<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript Debugging Techniques<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Node Package Manager<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Grunt/Gulp<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>GitHub<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Git Commands<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Web Accessibility<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>Web Performance<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Web Hosting<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Browser Dev Tools<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Google Analytics<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Basic Photoshop/Sketch Usage<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Topics/Concepts to Learn</h3>
+    
+            <ul class="listlist">
+                <li>HTML 5.2 New Features<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Responsive Images (picture element, srcset/sizes etc.)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Serverless<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Variable Fonts<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Shadow DOM<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>ES6+<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JSON & AJAX<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>API's<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript Patterns<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>JavaScript Testing<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>jQuery<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>SVG<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>React JS<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Angular JS<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>TypeScript<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Vue JS<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Node JS<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Webpack<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>SEO Techniques<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>HTML Emails<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>WordPress<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Static Site Generators (Jekyll, Hugo, Gatsby etc.)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Useful Websites for Learning</h3>
+    
+            <ul class="listlist">
+                <li>Code Academy<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>CodePen<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Codrops<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>CSS-Tricks<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Free Code Camp<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Khan Academy<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Lynda<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Medium<br> <i class="fas fa-paperclip"></i>&nbsp 2 </li>
+                <li>Mozilla Developer Network<br> <i class="fas fa-paperclip"></i>&nbsp 2</li>
+                <li>Stack Overflow<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Team Treehouse<br> <i class="fas fa-paperclip"></i>&nbsp 2</li>
+                <li>Tuts Plus<br> <i class="fas fa-paperclip"></i>&nbsp 2</li>
+                <li>Udemy<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>WPSessions<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>YouTube<br> <i class="fas fa-paperclip"></i>&nbsp 2</li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Web Dev YouTube Channels</h3>
+    
+            <ul class="listlist">
+                <li>Adam Khoury<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Brad Hussey<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>CSS-Tricks (Chris Coyier)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Derek Banas</li>
+                <li>DevTips (Travis Neilson)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Free Code Camp<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Fun Fun Function (Mattias Petter Johansson)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Google Chrome Developers<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Layout Land (Jen Simmons)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Learn Code Academy<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Level Up Tuts (Scott Tolinski)<br> <i class="fas fa-paperclip">&nbsp 1 </i></li>
+                <li>Mackenzie Child<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Rachel Andrew<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>The Net Ninja (Shaun Pelling)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>The New Boston (Bucky Roberts)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Traversy Media (Brad Traversy)<br> <i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Wes Bos<br><i class="fas fa-paperclip"></i>&nbsp 1 </li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">CodePen Ideas</h3>
+    
+            <ul class="listlist">
+                <li>Something cool with CSS Grid<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with CSS Flexbox<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with CSS animations<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with CSS gradients<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with CSS pseudo-elements<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with SVG<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with JavaScript<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Something cool with all of the above<br> <i class="fas fa-paperclip"></i>&nbsp 1</li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        <div class="list">
+    
+            <h3 class="list-title">Practise Website Ideas</h3>
+    
+            <ul class="listlist">
+                <li>Airsoft/Paintballing Centre<i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Bar/Pub<i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Bicycle Shop/Repair<i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Cafe/Coffee Shop<i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Car Showroom/Garage/Repair/Parts<i class="fas fa-paperclip"></i>&nbsp 1 </li>
+                <li>Construction Company <i class="fas fa-paperclip"></i>&nbsp 2 </li>
+                <li>Fitness/Gym/Leisure Centre<i class="fas fa-paperclip"></i>&nbsp 1			
+    </li>
+                <li>Nightclub<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Party Planning Company<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>PC Build/Repair Service<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Portfolio/CV<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Real Estate/AirBnB<br></li>
+                <li>Restaurant<br></li>
+                <li>Skiing/Snowboarding Centre/Company<i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Streaming Service for Movies/TV<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Streaming Service for Video Games<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Taxi Service<br><i class="fas fa-paperclip"></i>&nbsp 1</li>
+                <li>Travel Agency<br><i class="fas fa-paperclip"></i>&nbsp 1<br><i class="fas fa-paperclip"></i>&nbsp 1<br></li>
+                <li>Zoo/Safari Park<br><i class="fas fa-paperclip"></i>&nbsp 1<br></li>
+            </ul>
+    
+            <button class="addcard">Add a card</button>
+    
+        </div>
+    
+        
+      <button class="addlist" ><i class="fas fa-plus"style="font-size:18px;color:white; "></i>ADD A LIST</button>
+    
+    </section></body>
+</html>
